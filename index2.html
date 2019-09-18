@@ -1,0 +1,77 @@
+<html>
+    <head>
+
+    </head>
+    <body >
+        <p id="output">Угадай число нахуй</p>
+        
+        <input type = "text" id="input">
+
+        <button onclick="Click()">Enter</button>
+
+        <p id="history"></p>
+
+        <input type="range" min="0" max="100" value="0" id="range" oninput="Change()"><br>
+
+        <script> 
+
+        var inWin  = document.getElementById("input");
+        var outWin = document.getElementById("output");
+        var hist   = document.getElementById("history");
+        var range  = document.getElementById("range");
+
+        var RandNum = Math.round(Math.random()*100);
+        var Number = 0;
+        var counter = 0;
+        var pause = false;    
+
+        inWin.addEventListener("keyup", function(event)
+        {
+            if(event.keyCode === 13)
+                Click();
+        })
+
+        function Click()
+        {
+            if(pause) return;
+
+            Number = parseInt(inWin.value);
+
+            inWin.value = "";
+            hist.innerHTML+=Number+" ";
+
+            var outText = "";
+
+            counter++;
+
+            if(Number>RandNum)
+            outText="Мое число меньше, алло";
+            else 
+            if(Number<RandNum)
+            outText="Мое число больше, алло";
+            else
+            {
+                RandNum = Math.round(Math.random()*100);
+                setTimeout(function()
+                {
+                    outWin.innerHTML="Угадай плез";
+                    hist.innerHTML = "";
+                    pause=false;
+                },3000);
+                outText = "Тебе повезло алло с "+counter+" раза";
+                counter = 0;
+                pause = true;
+            } 
+
+            outWin.innerHTML = outText;
+        }
+
+        function Change()
+        {
+            inWin.value = range.value;
+        }
+
+        </script>
+
+    </body>
+</html>
