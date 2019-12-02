@@ -1,0 +1,44 @@
+<animals>
+
+<animal name="Bald uakari">
+<phylum>Chordata</phylum>
+<class>Mammalia</class>
+<order>Primates</order>
+<family>Pitheciidae</family>
+<description>The bald uakari or bald-headed uakari is a small 
+New World monkey characterized by a very short tail;
+ bright, crimson face; a bald head; and long coat.
+ The bald uakari is restricted to várzea forests and other wooded habitats near 
+ water in the western Amazon of Brazil and Peru.</description>
+<weight>3.00</weight>
+<length>45.6</length>
+<imageLink>https://upload.wikimedia.org/wikipedia/commons/e/e8/Cacajao_calvus_Solimoes_river.jpg</imageLink>
+</animal>
+
+<animal name="White-faced saki">
+<phylum>Chordata</phylum>
+<class>Mammalia</class>
+<order>Primates</order>
+<family>Pitheciidae</family>
+<description>The white-faced saki (Pithecia pithecia),
+ called the Guianan saki and the golden-faced saki,
+  is a species of the New World saki monkey.</description>
+<weight>2.0</weight>
+<length>35.6</length>
+<imageLink>https://upload.wikimedia.org/wikipedia/commons/b/b3/White-faced_Saki_2008-07.jpg</imageLink>
+</animal>
+
+<animal name="Hamadryas baboon">
+<phylum>Chordata</phylum>
+<class>Mammalia</class>
+<order>Primates</order>
+<family>Cercopithecidae</family>
+<description>The hamadryas baboon  is a species of baboon from the Old World monkey family.
+ It is the northernmost of all the baboons, 
+ being native to the Horn of Africa and the southwestern tip of the Arabian Peninsula. </description>
+<weight>15.0</weight>
+<length>50.6</length>
+<imageLink>https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Male_Hamadryas_Baboon_%288083148924%29.jpg/220px-Male_Hamadryas_Baboon_%288083148924%29.jpg</imageLink>
+</animal>
+
+</animals>

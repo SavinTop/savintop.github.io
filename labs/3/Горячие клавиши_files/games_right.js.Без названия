@@ -1,0 +1,9 @@
+function printGame(games, index) {
+var rnd = Math.floor(Math.random() * games.length)
+document.write("<p><a href='"+ games[rnd].about +"'/>")
+document.write("<img src='/common/agames/"+ games[rnd].img +"'/></a></p>")
+document.write("<p><strong>"+ games[rnd].name +"</strong><br/>")
+document.write(games[rnd].text +"<br/>")
+document.write("<a href='" + games[rnd].download + "'><strong>Скачать</strong></a>")
+document.write(" | <a href='/agames'>Другие игры</a></p>")
+}

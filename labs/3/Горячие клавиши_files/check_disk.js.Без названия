@@ -1,0 +1,34 @@
+  var reqSerial;
+  function LossFocusSerial()
+  {
+// reqSerialuest info  
+  reqSerial = null;
+    if (window.XMLHttpRequest) {
+        try {
+            reqSerial = new XMLHttpRequest();
+        } catch (e){}
+    } else if (window.ActiveXObject) {
+        try {
+            reqSerial = new ActiveXObject('Msxml2.XMLHTTP');
+        } catch (e){
+            try {
+                reqSerial = new ActiveXObject('Microsoft.XMLHTTP');
+            } catch (e){}
+        }
+    }
+    
+  s = "cd_num=" + document.getElementById("IDField1").value.substr(0, 6);
+  reqSerial.onreadystatechange = FillSerial;
+  reqSerial.open("GET", "http://ergosolo.ru/common/register/check_disk.html?" + s, true);
+  reqSerial.send(null);    
+  
+  }
+  
+  function FillSerial()
+  {
+  if (reqSerial.readyState == 4) {
+       if (reqSerial.status == 200) {
+        document.getElementById('IDSerial').value = reqSerial.responseText;
+       }
+   }    
+  }

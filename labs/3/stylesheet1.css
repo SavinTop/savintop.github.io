@@ -1,0 +1,39 @@
+.header
+{
+    color:darkblue;
+    text-shadow: 5px 2px 1px #2F4D4F;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.text
+{
+    margin-left: 250px;
+}
+
+.image
+{
+    clear: left;
+    border: 1px dashed #0000FF;
+    margin-left: 30px;
+    margin-right: 200px; 
+    float: right;
+}
+
+.link
+{
+    text-decoration-line: none;
+}
+
+.link:hover
+{
+    text-decoration-line: underline;
+}
+
+.button
+{
+margin-top: 2%;
+border:2px solid #C0C0C0;
+color: #CD853F;
+background-color: #0000FF;
+}

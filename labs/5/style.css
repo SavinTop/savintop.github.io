@@ -1,0 +1,33 @@
+.upperBlock
+{
+    background-color: #848484; 
+    border-top: 4px solid #1C1C1C;
+    padding: 23px;
+    margin-left:10px;
+    display: inline-block;
+    width: 50%;
+}
+.img
+{
+    float:left;
+    border: 5px solid #1C1C1C;
+    box-shadow: 6px 9px 10px #00ffff;
+    width: 150px;
+    height: 140px;
+}
+.lowerBlockwIn
+{
+    clear:both;
+    background-color: #1C1C1C;
+    border-radius: 40px 40px 3px 40px;
+    padding: 20px;
+    width:fit-content;
+}
+
+.lowerBlockwIn div
+{
+    background-color: #848484;
+    border: 4px dashed #fbf2ef;
+    padding: 20px;
+    text-decoration:underline;
+}

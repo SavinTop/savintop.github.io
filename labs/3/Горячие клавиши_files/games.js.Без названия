@@ -1,0 +1,7 @@
+var games = [
+	{ name: '"Веселая ферма"', text: 'Пробуем себя в роли фермера, который превращает захудалый хутор в богатое и процветающее хозяйство.', img: '2.gif', download: 'http://www.alawar.ru/download/showroom/449/FarmFrenzyRus.exe?pid=449', about: '/agames/?alawar_action=game&amp;alawar_id=6683'}, 
+	{ name: '"Сокровища Монтесумы"', text: 'Создавайте горизонтальные и вертикальные цепочки минимум из 3 одинаковых фишек чтобы добыть магические кристаллы, которые укажут путь к сокровищам легендарного императора ацтеков.', img: '1.gif', download: 'http://www.alawar.ru/download/showroom/449/TheTreasuresOfMontezumaRus.exe?pid=449', about: '/agames/?alawar_action=game&alawar_id=1921'}, 
+	{ name: '"Веселая ферма 2"', text: 'Веселая ферма 2 — долгожданное продолжение лучшей casual-игры по версии КРИ Awards 2008.', img: 'farm-frenzy-2-pic.gif', download: 'http://www.alawar.ru/download/FarmFrenzy2Rus_449.exe', about: '/agames/?alawar_action=game&alawar_id=6588'}, 
+	{ name: '"Переполох на ранчо"', text: 'В этой игре вас ждет красочная графика, реалистичные звуки живой природы, а также очень увлекательный игровой процесс.', img: 'ranch-rush-pic.gif', download: 'http://www.alawar.ru/download/RanchRushRus_449.exe', about: '/agames/?alawar_action=game&alawar_id=6464'}, 
+	{ name: '"Цепочки 2"', text: 'В увлекательной игре Цепочки 2 вам предстоит проявить смекалку и предусмотрительность.', img: 'chainz-2-relinked-pic.gif', download: 'http://www.alawar.ru/download/Chainz2RelinkedRus_449.exe', about: '/agames/?alawar_action=game&alawar_id=6525'}
+]

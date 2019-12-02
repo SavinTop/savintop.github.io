@@ -1,0 +1,65 @@
+<head>
+    <style>
+
+        .List ol
+        {
+            font-weight: bold;
+        }
+
+        .List ul
+        {
+            font-weight: bold;
+        }
+
+        .listitem:nth-child(even) li
+        {
+            color:#008000;
+        }
+
+        .listitem:nth-child(odd) li
+        {
+            color:#808000;
+        }
+    </style>
+</head>
+
+<body>
+   Категории книг для поиска:
+   <ol class = "List" style="list-style-type: lower-greek">
+   <li class = "listitem">   
+   Книги по авторам
+    <ul style="list-style-image: url('v14_1.png')" >
+   <li>Романы Джеффа Грабба</li>
+   <li>Произведения Урсулы Ле Гуин</li>
+   <li>Никос Зервас</li>
+    </ul>
+    </li>
+   
+    <li class = "listitem">
+   Книги по алфавиту
+   <ul>
+   <li>А</li>
+   <li>Б</li>
+   <li>В</li>
+   </ul>
+    </li>
+
+    <li class = "listitem">
+    Книги по жанрам
+    <ul type="disc">
+   <li>Альманахи</li>
+   <li>Библиографии</li>
+   <li>Книги для детей</li>
+    </ul>
+    </li>
+
+    <li class = "listitem">
+   Книги по издательствам
+   <ol style="list-style-type: square">
+   <li>Книги издательства "Аврора"</li>
+   <li>Книги издательства "Алгоритм"</li>
+   <li>Книги издательства "Амфора"</li>
+   </ol>
+    </li>
+</ol>
+</body>

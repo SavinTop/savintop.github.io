@@ -1,0 +1,24 @@
+function printBanner(banners, index) {
+	for (i = banners.length-1; i >= 0; i--) {
+		if (banners[i][1] == location.href) {
+			banners.splice(i, 1)
+		}
+	}
+	var j = typeof index == 'number' ? index : Math.floor(Math.random() * banners.length)
+	if (banners[j][5] == 1){
+		document.write("<a href='http://ergosolo.ru/common/click.html?id=" + banners[j][0] + "'>")
+		document.write("<img alt='" + banners[j][2] + "' border='0' class='banner'")
+		document.write(" src='http://ergosolo.ru/img/banners/" + banners[j][1] + "'")
+		document.write(" width='" + banners[j][3] + "' height='" + banners[j][4] + "' /></a>")
+	}
+	if (banners[j][5] == 2){
+		document.write("<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' 	codebase='http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0' width='"+banners[j][3]+"' height='"+banners[j][4]+"'>")
+		document.write("<param name='movie' value='http://ergosolo.ru/img/banners/"+banners[j][1]+"'>");
+		document.write("<param name=wmode value=transparent>");
+		document.write("<param name='allowScriptAccess' value='always'>");
+		document.write("<param name='quality' value='high'>");
+		document.write("<embed src='http://ergosolo.ru/img/banners/"+banners[j][1]+"' quality='high' wmode='transparent' pluginspage='http://www.macromedia.com/go/getflashplayer' type='application/x-shockwave-flash' width='"+banners[j][3]+"' height='"+banners[j][4]+"' allowScriptAccess='always'></embed>");
+		document.write("</object>");
+	}
+	 banners.splice(j, 1) 
+}

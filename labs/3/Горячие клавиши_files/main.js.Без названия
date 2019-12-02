@@ -1,0 +1,112 @@
+$(function(){
+
+
+
+	$('#menu a').hover(function(){
+		var img = $(this).prev()
+		img.attr('out', img.attr('src'))
+		img.attr('src', img.attr('over'))
+		this.style.cursor = 'pointer'
+	},function(){
+		var img = $(this).prev()
+		img.attr('src', img.attr('out'))
+	})
+
+
+	
+	$('a[width][height]').click(function(){
+		var t = $(this).attr('title')
+		var w = $(this).attr('width')
+		var h = $(this).attr('height')
+		var x = Math.round ((window.screen.width - w)/2)
+		var y = Math.round ((window.screen.height - h)/2)
+		if (window.opera) y = Math.abs (y - window.screenTop)
+		var p = window.open ('', '_blank', 'width=' + w + ',height=' + h + ',top=' + y + ',left=' + x)
+		var d = p.document
+		d.write("<html><head><title>" + t + "</title>")
+		d.write("<style type='text/css'>body { margin: 0; padding: 0; }</style>")
+		d.write("</head><body><a href='javascript:window.close()'>")
+		d.write("<img alt='" + t + "' src='" + this.href + "' border='0'/>")
+		d.write("</a></body></html>")
+		d.close()
+		if (p.focus) p.focus ()
+		return false
+	})
+	
+	
+		$('a[width1][height1]').click(function(){
+		var w = $(this).attr('width1')
+		var h = $(this).attr('height1')
+		var s = $(this).attr('href')
+		var x = Math.round ((window.screen.width - w)/2)
+		var y = Math.round ((window.screen.height - h)/2)
+		if (window.opera) y = Math.abs (y - window.screenTop)
+		var p = window.open (' ' + s + ' ', '_blank', 'width=' + w + ',height=' + h + ',top=' + y + ',left=' + x)
+		if (p.focus) p.focus ()
+		return false
+	})
+
+
+
+	$('span.pseudo').click(function(){
+		var rel = $(this).attr('rel')
+		$('span[rel=' + rel + ']').removeClass('selected').addClass('link')
+		$(this).removeClass('link').addClass('selected')
+		$('div[rel=' + rel + ']').hide()
+		$($(this).attr('href')).show()
+	})
+
+	$('.date-input').date_input();
+
+
+
+})
+
+var adbanner = {
+	
+	init: function(){
+		this.$adbanner = jQuery('#adbanner');
+		this.$close = jQuery('#adbanner a.close');
+		
+		this.$close.bind('click', jQuery.proxy(function(){
+			this.hide();
+			return true;
+		}, this));
+		
+		return this;
+	},
+	
+	show: function(){
+		if (this.getCookie('adbanner') == null) {
+			this.setCookie('adbanner', 1);
+			this.$adbanner.fadeIn(600);
+		}
+		return this;
+	},
+	
+	hide: function(){
+		this.$adbanner.fadeOut(600);
+		return this;
+	},
+	
+	getCookie: function(name){
+		if(document.cookie.length > 0){
+			c_start = document.cookie.indexOf(name + '=');
+			if(c_start != -1){ 
+				c_start = c_start + name.length + 1; 
+				c_end = document.cookie.indexOf(';', c_start);
+				if(c_end == -1){
+					c_end = document.cookie.length;
+				}
+				return document.cookie.substring(c_start, c_end);
+			} 
+		}
+		return null;
+	},
+		
+	setCookie: function(name, value){
+		var expires = 24 * 3600 * 1000;	// 24h
+		document.cookie = name + '=' + value + ((expires) ? ';expires=' + new Date(new Date().getTime() + expires).toGMTString() : '');
+	}
+};
+

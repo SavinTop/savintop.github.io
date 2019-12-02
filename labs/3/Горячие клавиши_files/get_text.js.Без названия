@@ -1,0 +1,41 @@
+
+var ResultTextID;
+
+function GetText(countryID, versionID, resultTextID, script)
+{
+    if(document.getElementById(countryID).value == "0"  ||
+          document.getElementById(versionID).value == "0") return;
+          
+    req = null;
+    if (window.XMLHttpRequest) {
+        try {
+            req = new XMLHttpRequest();
+        } catch (e){}
+    } else if (window.ActiveXObject) {
+        try {
+            req = new ActiveXObject('Msxml2.XMLHTTP');
+        } catch (e){
+            try {
+                req = new ActiveXObject('Microsoft.XMLHTTP');
+            } catch (e){}
+        }
+    } 
+
+    req.onreadystatechange = UpdateText;   
+    //prompt("","script="+script);  
+    var Request = script + "?country_id=" + document.getElementById(countryID).value +
+    "&version_id=" + document.getElementById(versionID).value;
+      
+    ResultTextID = resultTextID;   
+    req.open("GET", Request, true);
+    req.send(null);   
+}
+
+function UpdateText()
+{
+  if (req.readyState == 4) {
+       if (req.status == 200) {
+        document.getElementById(ResultTextID).innerHTML = req.responseText;
+       }
+   }  
+}

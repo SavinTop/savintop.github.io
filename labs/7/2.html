@@ -1,0 +1,66 @@
+<head>
+    <style>
+        textarea{
+            resize: none;
+        }
+        
+        #styledForm input[type='radio'] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+
+        #styledForm{
+            line-height: 30px;
+            background-color: #3e4449;
+            color:white;
+        }
+
+        #styledForm input[type='radio']{
+            width: 12px;
+            height: 12px;
+            border-radius: 15px;
+            position: relative;
+            background-color: #373a3c;
+        }
+
+        #styledForm input[type='radio']:checked{
+            border:3px solid #373a3c;
+            background-color: #42c9e6;
+        }
+    </style>
+</head>
+<body>
+    <h1>A Sample HTML Data Entry Form</h1>
+    <form>
+        Enter your name: <input type="text"><br>
+        Enter your password: <input type="password"><br>
+        Which year? 
+        <input type="radio" name="year" id="year1"><label for="year1">Yr 1</label>
+        <input type="radio" name="year" id="year2"><label for="year2">Yr 2</label>
+        <input type="radio" name="year" id="year3"><label for="year3">Yr 3</label>
+        <br>
+        Subject registered: 
+        <input type="checkbox" id="reg1"><label for="reg1">E101</label>
+        <input type="checkbox" id="reg2"><label for="reg2">E102</label>
+        <input type="checkbox" id="reg3"><label for="reg3">E103</label>
+        <br>
+        Select Day:
+        <select>
+            <option>Monday</option>
+            <option>Tuesday</option>
+            <option>Wednesday</option>
+            <option>Thursday</option>
+            <option>Friday</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+        </select><br>
+        <textarea name="textarea" rows="5" cols="32">Enter your special request here</textarea><br>
+        <input type="submit" value="SEND">
+        <input type="button" value="CLEAR">
+    </form>
+    <form id="styledForm">
+        <input type="radio" name="rad" id="first"><label for="first">Radio Button 1</label><br>
+        <input type="radio" name="rad" id="second"><label for="second">Radio Button 2</label>
+    </form>
+</body>

@@ -1,0 +1,13 @@
+<!ELEMENT animals (animal)>
+
+<!ELEMENT animal (phylum, class, order, family, description, weight, length, imageLink)>
+<!ATTLIST animal name CDATA #REQUIRED>
+
+<!ELEMENT phylum (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT order (#PCDATA)>
+<!ELEMENT family (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT weight (#PCDATA)>
+<!ELEMENT length (#PCDATA)>
+<!ELEMENT imageLink (#PCDATA)>

@@ -1,0 +1,667 @@
+var popular = [
+
+	
+	
+		
+	['Михаил Алдашин', '/common/soloist/popular/aldashin_mihail.jpg', 'aldashin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Бари Алибасов', '/common/soloist/popular/alibasov_bari.jpg', 'alibasov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Николай Анастасьев', '/common/soloist/popular/anastasev_nikolaj.jpg', 'anastasev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Лев Аннинский', '/common/soloist/popular/anninskiy_lev.jpg', 'anninskiy', '/soloist/popular/#']
+,
+	
+	
+		
+	['Мария Арбатова', '/common/soloist/popular/arbatova_maria.jpg', 'arbatova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Аркадий Арканов', '/common/soloist/popular/arkanov_arkadij.jpg', 'arkanov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Борис Бабаян', '/common/soloist/popular/babayan_boris.jpg', 'babayan', '/soloist/popular/#']
+,
+	
+	
+		
+	['Сарват Бегбуди ', '/common/soloist/popular/begbudi.jpg', 'begbudi', '/soloist/popular/#']
+,
+	
+	
+		
+	['Тимур Бекмамбетов', '/common/soloist/popular/bekmambetov_timur.jpg', 'bekmambetov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Битов', '/common/soloist/popular/bitov_andrej.jpg', 'bitov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Блёданс Эвелина', '/common/soloist/popular/bledans_evelina.jpg', 'bledans', '/soloist/popular/#']
+,
+	
+	
+		
+	['Константин Боровой', '/common/soloist/popular/borovoj_konstantin.jpg', 'bobovoj', '/soloist/popular/#']
+,
+	
+	
+		
+	['Яков Брандт', '/common/soloist/popular/brandt_yakov.jpg', 'brandt', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Бунич', '/common/soloist/popular/bunich_andrej.jpg', 'bunich', '/soloist/popular/#']
+,
+	
+	
+		
+	['Борис Бурда', '/common/soloist/popular/burda_boris.jpg', 'burda', '/soloist/popular/#']
+,
+	
+	
+		
+	['Святослав Бэлза', '/common/soloist/popular/belza.jpg', 'belza', '/soloist/popular/#']
+,
+	
+	
+		
+	['Анри Вартанов', '/common/soloist/popular/vartanov_anri.jpg', 'vartanov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Борис Васильев', '/common/soloist/popular/vasilyev_boris.jpg', 'vasilyev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Игорь Верник', '/common/soloist/popular/vernik_igor.jpg', 'vernik', '/soloist/popular/#']
+,
+	
+	
+		
+	['Эммануил Виторган', '/common/soloist/popular/vitorgan_emmanuil.jpg', 'vitorgan', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Вишневский', '/common/soloist/popular/vladimir_vishnevsky.jpg', 'vishnevsky', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Вознесенский', '/common/soloist/popular/voznesenskij_andrej.jpg', 'voznesenskij', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Воронин', '/common/soloist/popular/voronin_vladimir.jpg', 'voronin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Высотская Алёна', '/common/soloist/popular/visotskaya_alena.jpg', 'visotskaya', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Гамов', '/common/soloist/popular/gamov_alexander.jpg', 'gamov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Станислав Говорухин', '/common/soloist/popular/govoruhin_stanislav.jpg', 'govoruhin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Игорь Гончаров', '/common/soloist/popular/goncharov_igor.jpg', 'goncharov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Гордон', '/common/soloist/popular/alexander_gordon.jpg', 'gordon', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Городницкий', '/common/soloist/popular/gorodnickiy_aleksandr.jpg', 'gorodnickiy', '/soloist/popular/#']
+,
+	
+	
+		
+	['Светлана Горячева', '/common/soloist/popular/goryacheva_svetlana.jpg', 'goryacheva', '/soloist/popular/#']
+,
+	
+	
+		
+	['Герман Греф', '/common/soloist/popular/gref_german.jpg', 'gref', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Григорьев', '/common/soloist/popular/grigorev_vladimir.jpg', 'grigorev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Виктор Гусев', '/common/soloist/popular/viktor_gusev.jpg', 'gusev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Георгий Данелия', '/common/soloist/popular/danelia_georgij.jpg', 'danelia', '/soloist/popular/#']
+,
+	
+	
+		
+	['Михаил Делягин', '/common/soloist/popular/deliagin_mihail.jpg', 'deliagin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Мечислав Дмуховский', '/common/soloist/popular/dmuhovsky_mechislav.jpg', 'dmuhovsky', '/soloist/popular/#']
+,
+	
+	
+		
+	['Сергей Доля', '/common/soloist/popular/dolya_sergey.jpg', 'dolya', '/soloist/popular/#']
+,
+	
+	
+		
+	['Абдулмаджид Достиев', '/common/soloist/popular/dostiev.jpg', 'dostiev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Юрий Дуров', '/common/soloist/popular/durov_yury.jpg', 'durov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Виталий Дымарский', '/common/soloist/popular/dymarskij_vitalij.jpg', 'dymarskij', '/soloist/popular/#']
+,
+	
+	
+		
+	['Юрий Елисеев', '/common/soloist/popular/eliseev_jurij.jpg', 'eliseev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Виктор Ерофеев', '/common/soloist/popular/erofeev_victor.jpg', 'ergofeev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Сергей Ерофеев', '/common/soloist/popular/erofeev_sergej.jpg', 'erofeev_sergej', '/soloist/popular/#']
+,
+	
+	
+		
+	['Михаил Жванецкий', '/common/soloist/popular/jvaneckiy_michail.jpg', 'jvaneckiy', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Захаров', '/common/soloist/popular/zaharov_alexandr.jpg', 'zaharov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Самарий Зеликин', '/common/soloist/popular/zelikin_samarij.jpg', 'zelikin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Дмитрий Зимин', '/common/soloist/popular/zimin_dmitrij.jpg', 'zimin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Зурабов, Михаил Юрьевич', '/common/soloist/popular/zurabov_mihail.jpg', 'zurabov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Пётр Иванов', '/common/soloist/popular/ivanov_petr.jpg', 'ivanov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Кабаков', '/common/soloist/popular/kabakov_alexandr.jpg', 'kabakov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Евгений Касперский', '/common/soloist/popular/eugene_kaspersky.jpg', 'kaspersky', '/soloist/popular/#']
+,
+	
+	
+		
+	['Антон Комолов', '/common/soloist/popular/komolov_anton.jpg', 'komolov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрон Кончаловский', '/common/soloist/popular/konchalovsky_andron.jpg', 'konchalovsky', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Краснопольский', '/common/soloist/popular/krasnopolskij_vladimir.jpg', 'krasnopolskij', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Кузьмин', '/common/soloist/popular/kuzmin_alexander.jpg', 'kuzmin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Отар Кушанашвили', '/common/soloist/popular/kushanashvili_otar.jpg', 'kushanashvili', '/soloist/popular/#']
+,
+	
+	
+		
+	['Сергей Лавров', '/common/soloist/popular/lavrov_sergei.jpg', 'lavrov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Ольга Ларионова', '/common/soloist/popular/larionova_olga.jpg', 'larionova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрис Лиепа', '/common/soloist/popular/liepa_andris.jpg', 'liepa', '/soloist/popular/#']
+,
+	
+	
+		
+	['Анатолий Лысенко', '/common/soloist/popular/lysenko_anatolij.jpg', 'lysenko', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Малахов', '/common/soloist/popular/malahov_andrey.jpg', 'malahov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Маслаченко', '/common/soloist/popular/maslachenko_vladimir.jpg', 'maslachenko', '/soloist/popular/#']
+,
+	
+	
+		
+	['Лолита Милявская', '/common/soloist/popular/milyavskaya_lolita.jpg', 'milyavskaya', '/soloist/popular/#']
+,
+	
+	
+		
+	['Сергей Минаев', '/common/soloist/popular/minaev_sergey.jpg', 'minaev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Митта', '/common/soloist/popular/mitta_alex.jpg', 'mitta', '/soloist/popular/#']
+,
+	
+	
+		
+	['Олег Митяев', '/common/soloist/popular/mityaev_oleg.jpg', 'mityaev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Борис Моисеев', '/common/soloist/popular/moiseev_boris.jpg', 'moiseev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Молчанов Владимир', '/common/soloist/popular/vladimir_molchanov.jpg', 'molchanov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Максим Мошков', '/common/soloist/popular/moshkov_maxim.jpg', 'moshkov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Мусаэльян', '/common/soloist/popular/musaelian_vladimir.jpg', 'musaelian', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Нечаев', '/common/soloist/popular/nechaev_andrey.jpg', 'nechaev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Лев Новоженов', '/common/soloist/popular/novojenov_lev.jpg', 'novojenov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Антон Носик', '/common/soloist/popular/nosik_anton.jpg', 'nosik', '/soloist/popular/#']
+,
+	
+	
+		
+	['Рашид Нургалиев', '/common/soloist/popular/nurgaliev_rashid.gif', 'nurgaliev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Михаил Осокин', '/common/soloist/popular/osokin_mikhail.jpg', 'osokin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Леонид Парфенов', '/common/soloist/popular/parfenov_leonid.jpg', 'parfenov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Платонов', '/common/soloist/popular/platonov_vladimir.jpg', 'platonov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Павел Попович', '/common/soloist/popular/popovich_pavel.jpg', 'popovich', '/soloist/popular/#']
+,
+	
+	
+		
+	['Елена Проклова', '/common/soloist/popular/proklova_elena.jpg', 'proklova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Пронин', '/common/soloist/popular/pronin_vladimir.jpg', 'pronin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Иосиф Раскин', '/common/soloist/popular/raskin_iosif.jpg', 'raskin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Светлана Резанова', '/common/soloist/popular/rezanova_svetlana.jpg', 'rezanova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Леонид Рейман', '/common/soloist/popular/reiman_leonid.jpg', 'reiman', '/soloist/popular/#']
+,
+	
+	
+		
+	['Юрий Рост', '/common/soloist/popular/rost_yuri.jpg', 'rost', '/soloist/popular/#']
+,
+	
+	
+		
+	['Юрий Ростовцев', '/common/soloist/popular/yuriy_rostovcev.jpg', 'rostovcev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Леонид Рошаль', '/common/soloist/popular/roshal_leonid.jpg', 'roshal', '/soloist/popular/#']
+,
+	
+	
+		
+	['Никас Сафронов', '/common/soloist/popular/safronov_nikas.jpg', 'safronov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Анатолий Сердюков', '/common/soloist/popular/serdykov_anatolij.jpg', 'serdykov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Михаил Сеславинский', '/common/soloist/popular/seslavinskij_michael.jpg', 'seslavinskij', '/soloist/popular/#']
+,
+	
+	
+		
+	['Евгений Сидоров', '/common/soloist/popular/sidorov_evgenij.jpg', 'sidorov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Дмитрий Скляров', '/common/soloist/popular/skljrov_dmitrij.jpg', 'skljrov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Владимир Соловьёв', '/common/soloist/popular/soloviev_vladimir.jpg', 'soloviev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Олег Табаков', '/common/soloist/popular/tabakov_oleg.jpg', 'tabakov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Артём Тарасов', '/common/soloist/popular/tarasov_artem.jpg', 'tarasov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Шамиль Тарпищев', '/common/soloist/popular/tarpischev_shamil.jpg', 'tarpischev', '/soloist/popular/#']
+,
+	
+	
+		
+	['Валентина Терешкова', '/common/soloist/popular/tereshkova_valentina.jpg', 'tereshkova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Максим Федотов', '/common/soloist/popular/fedotov_maxim.jpg', 'fedotov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Андрей Фурсенко', '/common/soloist/popular/fursenko_andrej.jpg', 'fursenko', '/soloist/popular/#']
+,
+	
+	
+		
+	['Ирина Хакамада', '/common/soloist/popular/hakamada_irina.jpg', 'hakamada', '/soloist/popular/#']
+,
+	
+	
+		
+	['Николай Цискаридзе', '/common/soloist/popular/tsistskaridze_nikolay.jpg', 'tsistskaridze', '/soloist/popular/#']
+,
+	
+	
+		
+	['Семён Чайка', '/common/soloist/popular/chayka_semen.jpg', 'chayka', '/soloist/popular/#']
+,
+	
+	
+		
+	['Ирина Чащина', '/common/soloist/popular/chaschina_irina.jpg', 'chaschina', '/soloist/popular/#']
+,
+	
+	
+		
+	['Арина Шарапова', '/common/soloist/popular/sharapova_arina.jpg', 'sharapova', '/soloist/popular/#']
+,
+	
+	
+		
+	['Виктор Шендерович', '/common/soloist/popular/shenderovich_viktor.jpg', 'shenderovich', '/soloist/popular/#']
+,
+	
+	
+		
+	['Ефим Шифрин', '/common/soloist/popular/shifrin_efim.jpg', 'shifrin', '/soloist/popular/#']
+,
+	
+	
+		
+	['Александр Школьник', '/common/soloist/popular/shkolnikov_aleksandr.jpg', 'shkolnik', '/soloist/popular/#']
+,
+	
+	
+		
+	['Игорь Шувалов', '/common/soloist/popular/shuvalov_igor.jpg', 'shuvalov', '/soloist/popular/#']
+,
+	
+	
+		
+	['Шустер Савик', '/common/soloist/popular/shuster_savik.jpg', 'shuster', '/soloist/popular/#']
+,
+	
+	
+		
+	['Алексей Экслер', '/common/soloist/popular/exler_alex.jpg', 'exler', '/soloist/popular/#']
+
+]
+
+var corporate = [
+
+	
+	
+		
+	['Baker &amp; McKenzie', '/common/soloist/corporate/100/baker.gif', 'baker', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Ernst &amp; Young', '/common/soloist/corporate/100/ernst.gif', 'ernst', '/soloist/corporate/#']
+,
+	
+	
+		
+	['White &amp; Case', '/common/soloist/corporate/100/white.gif', 'white', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Альфа-Банк', '/common/soloist/corporate/100/alfabank.gif', 'alfa-bank', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Ингосстрах', '/common/soloist/corporate/100/ingosstrah.gif', 'ingosstrah', '/soloist/corporate/#']
+,
+	
+	
+		
+	['ИнформГаз', '/common/soloist/corporate/100/gazprom.gif', 'gazprom', '/soloist/corporate/#']
+,
+	
+	
+		
+	['ИТАР-ТАСС', '/common/soloist/corporate/100/itartass.gif', 'itartass', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Казкоммерцбанк', '/common/soloist/corporate/100/kkb.gif', 'kkb', '/soloist/corporate/#']
+,
+	
+	
+		
+	['ЛАНИТ', '/common/soloist/corporate/100/lanit.gif', 'lanit', '/soloist/corporate/#']
+,
+	
+	
+		
+	['МВ &#151; офисная техника', '/common/soloist/corporate/100/mb.gif', 'mb', '/soloist/corporate/#']
+,
+	
+	
+		
+	['МИЭЛЬ-Недвижимость', '/common/soloist/corporate/100/miel.gif', 'miel', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Московский Государственный Университет Приборостроения и Информатики', '/common/soloist/corporate/100/mgupi.jpg', 'mgupi', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Московский государственный университет путей сообщения', '/common/soloist/corporate/100/miit.gif', 'miit', '/soloist/corporate/#']
+,
+	
+	
+		
+	['НР Банк', '/common/soloist/corporate/100/nr-bank.jpg', 'nr-bank', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Сбербанк России', '/common/soloist/corporate/100/sberbank.png', 'sberbank', '/soloist/corporate/#']
+,
+	
+	
+		
+	['СП «Тенгизшевройл»', '/common/soloist/corporate/100/tengiz.gif', 'tengiz', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Страховая компания «РОСНО»', '/common/soloist/corporate/100/rosno.gif', 'rosno', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Таганрогская таможня', '/common/soloist/corporate/100/taganrogtamojnya.jpg', 'tamojnya', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Торгово-промышленная палата РФ', '/common/soloist/corporate/100/tpprf.gif', 'tpprf', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Тройка Диалог', '/common/soloist/corporate/100/troika.gif', 'troika', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Управление Министерства Российской Федерации по налогам и сборам по г. Москве', '/common/soloist/corporate/100/mosnalog.gif', 'mosnalog', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Управление Министерства Российской Федерации по налогам и сборам по Московской области', '/common/soloist/corporate/100/nalog.gif', 'nalog', '/soloist/corporate/#']
+,
+	
+	
+		
+	['Цеснабанк', '/common/soloist/corporate/100/cesnabank.jpg', 'cesnabank', '/soloist/corporate/#']
+
+]

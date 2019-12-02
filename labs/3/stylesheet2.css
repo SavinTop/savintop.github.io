@@ -1,0 +1,21 @@
+.concept
+{
+font-style: italic;
+}
+
+a
+{
+text-decoration-line: none;
+color:black;
+}
+
+a:visited
+{
+text-decoration-line: none;
+color:black;
+}
+
+body
+{
+background-image: url("fon.jpg");
+}
