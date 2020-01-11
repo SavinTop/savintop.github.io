@@ -1,0 +1,28 @@
+<p id="out" style="font-family: Courier New;"></p>
+<p id="out2" style="font-family: Courier New;font-size: 40;"></p>
+<script>
+    let out = document.getElementById("out");
+    let out2 = document.getElementById("out2");
+    let outStr = "[-----------------------------------]".split('');
+    let counter = 0;
+
+    function lol()
+    {
+        counter++;
+        let pos = outStr.indexOf('-');
+        if(pos>=0)
+        outStr[pos] = "#";
+        else
+        {
+            out2.innerText = "Ты пидор";
+            return;
+        }
+
+        let lolkek = Math.round(counter/(outStr.length-2)*10000)/100;
+        out.innerText = outStr.join("")+lolkek+"%";
+        out.style.color = `rgb(0,${Math.round(lolkek/100*180)},0)`;
+        setTimeout(lol, 200);
+    }
+
+    lol();
+</script>
