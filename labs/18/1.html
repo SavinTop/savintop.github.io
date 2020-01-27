@@ -1,0 +1,23 @@
+<script>
+
+let input = "";
+let k, s;
+
+do{
+    input = prompt("Введите строку из 15 символов:");
+}while(input.length!=15)
+
+k = Number(prompt("Введите k:"));
+s = Number(prompt("Введите s:"));
+
+function func(str = "", k=0, s=0)
+{
+    if(s==k) return str;
+    if(k>s) [s,k] = [k,s];
+    let substr = str.substring(k,s).split("").reverse().join("");
+    return str.substring(0,k)+substr+str.substring(s);
+}
+
+alert(func(input, k, s));
+
+</script>

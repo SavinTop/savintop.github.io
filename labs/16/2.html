@@ -1,0 +1,38 @@
+<form>
+	Выберите элемент, который хотите добавить на страницу:<br>
+	<input onclick="first()" type="radio" name="r1">Заголовок с курсивным начертанием</input><br>
+	<input onclick="second()" type="radio" name="r1">Виджет для выбора цвета</input><br>
+	<input onclick="third()" type="radio" name="r1">2 ссылки на ЛР №14,15 внутри блока div</input><br>
+</form>
+<script>
+	function first(){
+	let a=document.createElement('h1');
+	a.innerText = "Алло";
+    a.setAttribute("style","font-style:italic");
+	document.body.appendChild(a);
+	}
+
+	function second(){
+	let a=document.createElement('input');
+	a.setAttribute("type","color");
+	document.body.appendChild(a);
+	}
+
+	function third(){
+	let div=document.createElement('div');
+
+	let link = document.createElement('a');
+    link.setAttribute("href","../14/");
+    link.innerText = "14 lab";
+    div.appendChild(link);
+    
+    div.appendChild(document.createElement("br"));
+
+    link = document.createElement('a')
+    link.setAttribute("href","../15/");
+    link.innerText = "15 lab";
+    div.appendChild(link);
+
+	document.body.appendChild(div);
+	}
+	</script>

@@ -1,0 +1,23 @@
+<form>
+    Укажите любимую породу собак<br>
+    <input type="radio" name="group" id="r1" onchange="setImg('Английский бульдог.jpg')"> 
+    <label for="r1">Английский бульдог</label><br>
+
+    <input type="radio" name="group" id="r2" onchange="setImg('Немецкая овчарка.jpg')">
+    <label for="r2">Немецкая овчарка</label><br>
+
+    <input type="radio" name="group" id="r3" onchange="setImg('Лабрадор-ретривер.jpg')">
+    <label for="r3">Лабрадор-ретривер</label><br>
+
+    <input type="radio" name="group" id="r4" onchange="setImg('Бигль.jpg')">
+    <label for="r4">Бигль</label><br>
+    
+    <img id="image" src="картинка_здесь.png" width="200" height="200">
+</form>
+
+<script>
+    function setImg(src)
+    {
+        document.getElementById('image').src=src;
+    }
+</script>

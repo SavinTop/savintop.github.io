@@ -1,0 +1,18 @@
+<script>
+    function divisorsSum(n=0)
+    {
+        let sum = n+1;
+        for(let i=2;i<=n/2;i++)if(n%i) sum+=i;
+        return sum;
+    }
+
+    function DivisorsSumInterval(from=0, to=0)
+    {
+        let sum = 0;
+        for(let i=from;i<=to;i++)
+        sum+=divisorsSum(i);
+        return sum;
+    }
+
+    alert(DivisorsSumInterval(50,70));
+</script>

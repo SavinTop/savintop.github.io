@@ -1,0 +1,62 @@
+<p id = "firstOut"></p>
+<input id="input" oninput="proceedStr()">
+<script async>
+    let assArray = [
+        ["Лапы","кошка"],
+        ["Молоко","корова"],
+        ["Палатка","лагерь"],
+        ["Подснежник","весна"],
+        ["Пуанты","балерина"],
+        ["Собака","будка"],
+        ["Фотография","альбом"],
+        ["Футбол","мяч"],
+        ["Флакон","духи"],
+        ["Дверь","ключ"],
+        ["Лезвие","нож"],
+        ["Дерево","лист"],
+        ["Тесто","пирог"],
+        ["Паутина","паук"],
+        ["Автобус","билет"],
+        ["Бритва","борода"],
+        ["Война","бой"],
+        ["Зонт","дождь"],
+        ["Кредит","банк"],
+    ];
+
+    let input = document.getElementById("input");
+    let firstOut = document.getElementById("firstOut");
+
+    let currW = 0;
+    let letterCount = 0;
+
+    function getEnding(n=0)
+    {
+        let arr = ['','а','ы','ы','ы','','','','',''];
+        if(n<10 || n>20) return arr[n%10];
+        return '';
+    }
+
+    function NextWord()
+    {
+        currW = Math.floor(Math.random()*assArray.length);
+        letterCount = assArray[currW][1].length;
+        firstOut.innerText=`${assArray[currW][0]}(${letterCount} букв${getEnding(letterCount)})`;
+    }
+
+    function proceedStr()
+    {
+        let str = input.value;
+        if(str.toLowerCase()==assArray[currW][1])
+        {
+            input.style.background = "lightgreen";
+            setTimeout(function(){
+                input.value = "";
+                input.style.background = "white";
+                NextWord();
+            },100);
+        }
+    }
+
+    NextWord();
+
+</script>

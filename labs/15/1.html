@@ -1,0 +1,16 @@
+<script>
+    let n = Number(prompt("Введите n:"));
+    let strOut = "";
+
+    let last = 0;
+    let countOfPairs = 0;
+
+    for(let i=0;i<n;i++)
+    {
+        let curr = Number(prompt(`Введите ${i+1}-ое число:`));
+        countOfPairs += (last%10 == 5 && curr%10 == 5);
+        strOut+=(last = curr)+' ';
+    }
+
+    alert(`Введенные числа: ${strOut}\nКол-во пар: ${countOfPairs}`);
+</script>

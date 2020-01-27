@@ -1,0 +1,14 @@
+<p id="out">Поместить на html-страницу текст и кнопку.</p>
+<button onclick="func()">Butt</button>
+<script>
+     let size = 240;
+     let out = document.getElementById("out");
+     out.style.fontSize = size+"px";
+
+     function func()
+     {
+         setTimeout(() => {
+            out.style.fontSize = (size-=80)+"px";
+         }, 2000);
+     }   
+</script>

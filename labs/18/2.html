@@ -1,0 +1,7 @@
+<script>
+    let counter = 0;
+    let time = setInterval(() => {
+        if(++counter>=60) clearInterval(time);
+        document.title = counter;
+    }, 1000);
+</script>
