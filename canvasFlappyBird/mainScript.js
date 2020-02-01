@@ -8,6 +8,8 @@ let mouseDown = false;
 
 canvas.onmousedown = ()=>{mouseDown = true;}
 canvas.onmouseup = ()=>{mouseDown = false;}
+canvas.ontouchstart = ()=>{mouseDown = true;}
+canvas.ontouchend = ()=>{mouseDown = false;}
 
 //Pics
 const backgroundPic = new Image();
@@ -19,8 +21,11 @@ floorPic.src = "Sprites/base.png";
 const birdPicAnimated = new Image();
 birdPicAnimated.src = "Sprites/birdSpread.png";
 
-let BirdW;
-let BirdH; 
+const pipePic = new Image();
+pipePic.src = "Sprites/pipe-green.png";
+
+let birdW;
+let birdH; 
 
 //SubCanvases
 const backgroundCanvas = document.createElement("canvas");
@@ -62,6 +67,13 @@ birdPicAnimated.onload = ()=>{
     birdH = Math.floor(neededHeight/3);
 };
 
+pipePic.onload = ()=>{
+    const neededWidth = canvas.height/7;
+    const h = Math.floor(neededWidth/pipePic.width*pipePic.height);
+    pipePic.w = Math.floor(neededWidth);  
+    pipePic.h = h;
+};
+
 function drawFloorLayer(offset)
 {
     offset=offset%floorPic.w;
@@ -87,16 +99,19 @@ function drawBird(x,y,animId, rot){
 const fallAcceleration = canvas.height/1000;
 const fallingSpeedLimit = canvas.height/50;
 const flapValue = canvas.height/50;
+const floorSpeed = 3;
 
 let temp = 0;
 let vSpeed = 0;
 let yPos = canvas.height/2;
 
 let frameCounter = 0;
+
 setInterval(() => {
    ctx.drawImage(backgroundCanvas,0,0);
-   drawFloorLayer(temp-=3);
-   
+   ctx.drawImage(pipePic, canvas.width+temp,300+200*Math.random(), pipePic.w, pipePic.h);
+   drawFloorLayer(temp-=floorSpeed);
+
    drawBird(canvas.width/2,yPos,Math.floor(-temp/20)%3,(Math.PI / 180) * vSpeed*4);
 
    if(mouseDown){
