@@ -12,7 +12,6 @@ canvas.onmouseup = ()=>{mouseDown = false;}
 canvas.ontouchstart = ()=>{mouseDown = true;}
 canvas.ontouchend = ()=>{mouseDown = false;}
 
-//Pics
 const backgroundPic = new Image();
 backgroundPic.src = "Sprites/background-day.png";
 
@@ -25,12 +24,16 @@ birdPicAnimated.src = "Sprites/birdSpread.png";
 const pipePic = new Image();
 pipePic.src = "Sprites/pipe-green.png";
 
-let birdW;
-let birdH; 
+const pipePic_rev = new Image();
+pipePic_rev.src = "Sprites/pipe-green-rev.png";
 
-//SubCanvases
 const backgroundCanvas = document.createElement("canvas");
 const floorCanvas = document.createElement("canvas");
+
+let birdW;
+let birdH; 
+const countOfLoaders = 5;
+let countOfLeftToLoad = countOfLoaders; 
 
 backgroundPic.onload = ()=>{
     backgroundCanvas.width = canvas.width;
@@ -43,6 +46,7 @@ backgroundPic.onload = ()=>{
 
     for(let i = 0;i*backgroundPic.w<canvas.width;i++)
     tempCtx.drawImage(backgroundPic, i*backgroundPic.w, 0, backgroundPic.w, backgroundPic.h);
+    countOfLeftToLoad--;
 };
 
 floorPic.onload = ()=>{
@@ -56,6 +60,7 @@ floorPic.onload = ()=>{
     floorPic.h = neededHeight;
     for(let i = 0;i*floorPic.w<canvas.width+floorPic.w;i++)
     tempCtx.drawImage(floorPic, i*floorPic.w, canvas.height-floorPic.h, floorPic.w, floorPic.h);
+    countOfLeftToLoad--;
 };
 
 birdPicAnimated.onload = ()=>{
@@ -66,6 +71,7 @@ birdPicAnimated.onload = ()=>{
 
     birdW = w;
     birdH = Math.floor(neededHeight/3);
+    countOfLeftToLoad--;
 };
 
 pipePic.onload = ()=>{
@@ -73,12 +79,21 @@ pipePic.onload = ()=>{
     const h = Math.floor(neededWidth/pipePic.width*pipePic.height);
     pipePic.w = Math.floor(neededWidth);  
     pipePic.h = h;
+    countOfLeftToLoad--;
+};
+
+pipePic_rev.onload = ()=>{
+    const neededWidth = canvas.height/7;
+    const h = Math.floor(neededWidth/pipePic_rev.width*pipePic_rev.height);
+    pipePic_rev.w = Math.floor(neededWidth);  
+    pipePic_rev.h = h;
+    countOfLeftToLoad--;
 };
 
 function drawFloorLayer(offset)
 {
     offset=offset%floorPic.w;
-    ctx.drawImage(floorCanvas,offset,0);
+    ctx.drawImage(floorCanvas,Math.floor(offset),0);
 }
 
 function drawBird(x,y,animId, rot){
@@ -97,23 +112,44 @@ function drawBird(x,y,animId, rot){
     ctx.restore();
 }
 
-const fallAcceleration = canvas.height/1000;
-const fallingSpeedLimit = canvas.height/50;
-const flapValue = canvas.height/50;
-const floorSpeed = 3;
 
-let temp = 0;
+function Start()
+{
+const fallAcceleration = canvas.height* 1/1000;
+const fallingSpeedLimit = canvas.height * 1/50;
+const flapValue = canvas.height * 1/50;
+const floorSpeed = canvas.height * 1/200;
+const tubeCrack = canvas.height*0.30;
+
+let basePosition = 0;
 let vSpeed = 0;
 let yPos = canvas.height/2;
 
-let frameCounter = 0;
+const pipeCount = 2;
+const pipeInterval = canvas.width/pipeCount+pipePic.w/2;
+
+let pipeArr = [];
+
+for(let i=0;i<pipeCount;i++)
+    pipeArr.push([canvas.width+i*pipeInterval, (canvas.height-floorPic.h-tubeCrack*1.40)*Math.random()+tubeCrack*0.70]);
 
 setInterval(() => {
    ctx.drawImage(backgroundCanvas,0,0);
-   ctx.drawImage(pipePic, canvas.width+temp,300+200*Math.random(), pipePic.w, pipePic.h);
-   drawFloorLayer(temp-=floorSpeed);
 
-   drawBird(canvas.width/2,yPos,Math.floor(-temp/20)%3,(Math.PI / 180) * vSpeed*4);
+   pipeArr.forEach(val=>{
+    ctx.drawImage(pipePic_rev, val[0],val[1]-tubeCrack/2-pipePic_rev.h, pipePic_rev.w, pipePic_rev.h);
+    ctx.drawImage(pipePic, val[0],val[1]+tubeCrack/2, pipePic.w, pipePic.h);
+
+    val[0]-=floorSpeed;
+    if(val[0]+pipePic.w<0) {
+        val[1] = (canvas.height-floorPic.h-tubeCrack*1.40)*Math.random()+tubeCrack*0.70;
+        val[0] = canvas.width;
+        }
+   });
+
+   drawFloorLayer(basePosition-=floorSpeed);
+   
+   drawBird(canvas.width/2,yPos,Math.floor(-basePosition/20)%3,(Math.PI / 180) * vSpeed*4);
 
    if(mouseDown){
        vSpeed=-flapValue;
@@ -128,11 +164,15 @@ setInterval(() => {
    if(yPos+vSpeed-birdH<canvas.height-floorPic.h)
    yPos+=vSpeed;
 
-   frameCounter++;
-}, 16);
+}, 1000/60);
 
-setInterval(() => {
-    document.title = frameCounter+" fps";
-    frameCounter = 0;
-}, 1000);
+}
 
+let int = setInterval(() => {
+    document.title = (countOfLoaders-countOfLeftToLoad)/countOfLoaders*100+' %';
+    if(!countOfLeftToLoad)
+    {
+        clearInterval(int);
+        Start();
+    }
+}, 33);
