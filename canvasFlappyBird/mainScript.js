@@ -1,8 +1,9 @@
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 
-canvas.height = document.body.clientHeight;
-canvas.width = canvas.height;
+const min = Math.min(document.body.clientHeight, document.body.clientWidth);
+canvas.height = min;
+canvas.width = min;
 
 let mouseDown = false;
 
