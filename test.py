@@ -18,7 +18,13 @@ time.sleep(2)
 
 def printField():
     os.system('cls')
+    print('',end = "   ")
+    for i in range(len(field)-1):
+        print(chr(ord('а')+i), end = "")
+
+    print('к')
     for i in range(len(field)):
+        print(str(i+1).ljust(2)+"|", end = "")
         for j in range(len(field[0])):
             print('#' if field[i][j] else '_', end = "")
         print("")
