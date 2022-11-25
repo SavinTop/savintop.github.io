@@ -1,0 +1,13 @@
+D:\1.1.0\бух учет\бд\BD\BD\bin\Debug\BD.exe.config
+D:\1.1.0\бух учет\бд\BD\BD\bin\Debug\BD.exe
+D:\1.1.0\бух учет\бд\BD\BD\bin\Debug\BD.pdb
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.csprojAssemblyReference.cache
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.EditAddForm.resources
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.MainForm.resources
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.Properties.Resources.resources
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.WorkerForm.resources
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.csproj.GenerateResource.cache
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.csproj.CoreCompileInputs.cache
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.exe
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.pdb
+D:\1.1.0\бух учет\бд\BD\BD\obj\Debug\BD.CheckForeignForm.resources
